@@ -9,7 +9,7 @@ use Carp;
 use XML::LibXML;
 use Moo;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 has data => ( is => 'rw', trigger => \&_parse );
 has node => ( is => 'rw', lazy    => 1, builder => \&_parse);
