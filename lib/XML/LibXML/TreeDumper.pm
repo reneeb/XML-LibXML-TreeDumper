@@ -93,4 +93,19 @@ or
   
   $dumper->dump;
 
+=head1 ATTRIBUTES
 
+=head2 data
+
+You can get/set the XML data. If you pass a reference, the value of the reference is handled as a
+string that contains XML. Otherwise it is handled as a file.
+
+=head2 node
+
+The root node of the parsed XML.
+
+=head1 METHODS
+
+=head2 dump
+
+return a string that represents the tree of the XML.
